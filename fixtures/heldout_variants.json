@@ -1,0 +1,44 @@
+{
+  "heldout-v1": {
+    "source": "heldout_sales.json"
+  },
+  "heldout-v2": {
+    "source": "heldout_sales.json",
+    "schema_version": "sales_v2"
+  },
+  "heldout-unknown": {
+    "source": "heldout_sales.json",
+    "schema_version": "unregistered_price_rename"
+  },
+  "heldout-missing": {
+    "source": "heldout_sales.json",
+    "missing_coverage": "2026-04"
+  },
+  "heldout-incomplete": {
+    "source": "heldout_sales.json",
+    "incomplete_coverage": "2026-05"
+  },
+  "heldout-zero": {
+    "source": "heldout_sales.json",
+    "remove_north_period": "2026-04"
+  },
+  "heldout-no-refunds": {
+    "source": "heldout_sales.json",
+    "remove_refunds_for": [
+      "H-N-APR-D",
+      "H-N-MAY-D"
+    ]
+  },
+  "heldout-no-partner": {
+    "source": "heldout_sales.json",
+    "remove_partner_current": true
+  },
+  "heldout-events": {
+    "source": "heldout_sales.json",
+    "extra_events": true
+  },
+  "heldout-injection": {
+    "source": "heldout_sales.json",
+    "instruction_text": true
+  }
+}

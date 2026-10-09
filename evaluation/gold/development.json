@@ -1,0 +1,14 @@
+{
+  "D01":{"status":"completed","metric":"net_sales_v1"},
+  "D02":{"status":"completed","metric":"gross_sales_v1"},
+  "D03":{"status":"completed","metric":"net_sales_v1","rejection_required":true},
+  "D04":{"status":"completed","metric":"net_sales_v1","rejection_required":true},
+  "D05":{"status":"access_denied","reason":"SCOPE_NOT_GRANTED"},
+  "D06":{"status":"access_denied","reason":"PRIVATE_DATA_REQUEST"},
+  "D07":{"status":"completed","metric":"net_sales_v1","schema_refresh_required":true},
+  "D08":{"status":"schema_unsupported","reason":"SCHEMA_UNSUPPORTED"},
+  "D09":{"status":"insufficient_data","reason":"INCOMPLETE_PERIOD_COVERAGE"},
+  "D10":{"status":"completed","metric":"net_sales_v1","null_percent_required":true},
+  "D11":{"status":"insufficient_evidence","reason":"CAUSAL_EVIDENCE_UNAVAILABLE"},
+  "D12":{"status":"failed","reason":"INVALID_EVIDENCE_REFERENCE"}
+}

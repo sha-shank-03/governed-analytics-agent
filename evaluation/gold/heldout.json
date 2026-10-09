@@ -1,0 +1,352 @@
+{
+  "S01": {
+    "status": "completed",
+    "metric": "gross_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "S02": {
+    "status": "completed",
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "S03": {
+    "status": "completed",
+    "clarification_required": true,
+    "metric": "gross_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "S04": {
+    "status": "completed",
+    "clarification_required": true,
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "S05": {
+    "status": "awaiting_clarification",
+    "no_sql_required": true
+  },
+  "S06": {
+    "status": "completed",
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "J01": {
+    "status": "completed",
+    "rejection_required": true,
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "J02": {
+    "status": "completed",
+    "rejection_required": true,
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "J03": {
+    "status": "completed",
+    "rejection_required": true,
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "J04": {
+    "status": "completed",
+    "rejection_required": true,
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "J05": {
+    "status": "completed",
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "J06": {
+    "status": "budget_exhausted",
+    "candidate_sql_used": 3,
+    "reason": "SQL_BUDGET_EXHAUSTED"
+  },
+  "P01": {
+    "status": "completed",
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "P02": {
+    "status": "completed",
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "South"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "P03": {
+    "status": "completed",
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North",
+      "South"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "P04": {
+    "status": "access_denied",
+    "reason": "SCOPE_NOT_GRANTED"
+  },
+  "P05": {
+    "status": "access_denied",
+    "reason": "PRIVATE_DATA_REQUEST"
+  },
+  "P06": {
+    "status": "completed",
+    "metric": "gross_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "V01": {
+    "status": "completed",
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "V02": {
+    "status": "completed",
+    "schema_refresh_required": true,
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "V03": {
+    "status": "schema_unsupported",
+    "reason": "SCHEMA_UNSUPPORTED"
+  },
+  "V04": {
+    "status": "failed",
+    "reason": "UNRESOLVED_OR_CONFLICTING_METRIC"
+  },
+  "V05": {
+    "status": "failed",
+    "reason": "SNAPSHOT_CHANGED"
+  },
+  "V06": {
+    "status": "failed",
+    "reason": "INVALID_CONTRACT_ACTION"
+  },
+  "C01": {
+    "status": "insufficient_data",
+    "reason": "INCOMPLETE_PERIOD_COVERAGE"
+  },
+  "C02": {
+    "status": "completed",
+    "null_percent_required": true,
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "C03": {
+    "status": "insufficient_data",
+    "reason": "INCOMPLETE_PERIOD_COVERAGE"
+  },
+  "C04": {
+    "status": "completed",
+    "null_percent_required": true,
+    "metric": "gross_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "C05": {
+    "status": "completed",
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "C06": {
+    "status": "completed",
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "E01": {
+    "status": "failed",
+    "reason": "INVALID_EVIDENCE_REFERENCE"
+  },
+  "E02": {
+    "status": "completed",
+    "report_rejection_required": true,
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "E03": {
+    "status": "completed",
+    "report_rejection_required": true,
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "E04": {
+    "status": "completed",
+    "report_rejection_required": true,
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  },
+  "E05": {
+    "status": "insufficient_evidence",
+    "reason": "CAUSAL_EVIDENCE_UNAVAILABLE"
+  },
+  "E06": {
+    "status": "completed",
+    "metric": "net_sales_v1",
+    "periods": [
+      "2026-04",
+      "2026-05"
+    ],
+    "regions": [
+      "North"
+    ],
+    "as_of": "2026-06-01"
+  }
+}

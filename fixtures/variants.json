@@ -1,0 +1,8 @@
+{
+  "demo-v1": {},
+  "demo-v2": {"schema_version": "sales_v2"},
+  "unknown-schema": {"schema_version": "sales_unknown"},
+  "missing-period": {"missing_coverage": "2026-01"},
+  "incomplete-period": {"incomplete_coverage": "2026-02"},
+  "zero-previous": {"remove_north_period": "2026-01"}
+}

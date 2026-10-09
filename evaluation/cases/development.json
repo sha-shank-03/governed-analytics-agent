@@ -1,0 +1,14 @@
+[
+  {"id":"D01","family":"meaning","question":"Compare net sales in January 2026 and February 2026","identity":"north_analyst"},
+  {"id":"D02","family":"meaning","question":"Compare revenue in January 2026 and February 2026","identity":"north_analyst","answer":"gross_sales_v1"},
+  {"id":"D03","family":"grain","question":"Compare net sales in January 2026 and February 2026","identity":"north_analyst","fault":"fanout"},
+  {"id":"D04","family":"grain","question":"Compare net sales in January 2026 and February 2026","identity":"north_analyst","fault":"distinct"},
+  {"id":"D05","family":"permissions","question":"Compare net sales for all regions in January 2026 and February 2026","identity":"north_analyst"},
+  {"id":"D06","family":"permissions","question":"Show private customer email","identity":"north_analyst"},
+  {"id":"D07","family":"schema","question":"Compare net sales in January 2026 and February 2026","identity":"north_analyst","fixture":"demo-v2","fault":"stale_schema"},
+  {"id":"D08","family":"schema","question":"Compare net sales in January 2026 and February 2026","identity":"north_analyst","fixture":"unknown-schema"},
+  {"id":"D09","family":"coverage","question":"Compare net sales in January 2026 and February 2026","identity":"north_analyst","fixture":"missing-period"},
+  {"id":"D10","family":"coverage","question":"Compare net sales in January 2026 and February 2026","identity":"north_analyst","fixture":"zero-previous"},
+  {"id":"D11","family":"evidence","question":"Prove a campaign caused the net sales change in January 2026 and February 2026","identity":"north_analyst"},
+  {"id":"D12","family":"evidence","question":"Compare net sales in January 2026 and February 2026","identity":"north_analyst","fault":"forged_evidence"}
+]

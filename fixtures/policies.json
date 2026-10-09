@@ -1,0 +1,8 @@
+{
+  "version": "policy_v1",
+  "grants": {
+    "north_analyst": ["North"],
+    "south_analyst": ["South"],
+    "all_sales_analyst": ["North", "South"]
+  }
+}

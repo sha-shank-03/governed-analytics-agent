@@ -1,0 +1,47 @@
+{
+  "fictional": true,
+  "schema_version": "sales_v1",
+  "as_of": "2026-03-01",
+  "orders": [
+    ["N-JAN-A", "2026-01-10", "North", "direct", "completed"],
+    ["N-JAN-B", "2026-01-20", "North", "direct", "completed"],
+    ["N-JAN-P", "2026-01-25", "North", "partner", "completed"],
+    ["N-FEB-D", "2026-02-10", "North", "direct", "completed"],
+    ["N-FEB-P", "2026-02-20", "North", "partner", "completed"],
+    ["SOUTH_ORDER_CANARY", "2026-01-15", "South", "direct", "completed"],
+    ["S-FEB-D", "2026-02-15", "South", "direct", "completed"]
+  ],
+  "order_lines": [
+    ["L01", "N-JAN-A", 2, 100000, 20000],
+    ["L02", "N-JAN-A", 1, 200000, 20000],
+    ["L03", "N-JAN-B", 1, 150000, 10000],
+    ["L04", "N-JAN-B", 1, 200000, 10000],
+    ["L05", "N-JAN-P", 1, 225000, 20000],
+    ["L06", "N-JAN-P", 1, 225000, 20000],
+    ["L07", "N-FEB-D", 1, 250000, 20000],
+    ["L08", "N-FEB-D", 1, 250000, 20000],
+    ["L09", "N-FEB-P", 1, 300000, 40000],
+    ["L10", "N-FEB-P", 1, 300000, 40000],
+    ["L11", "SOUTH_ORDER_CANARY", 1, 999900, 100],
+    ["L12", "S-FEB-D", 1, 1000000, 0]
+  ],
+  "refunds": [
+    ["R01", "N-JAN-A", "2026-01-12", 20000, "posted"],
+    ["R02", "N-JAN-A", "2026-02-05", 40000, "posted"],
+    ["R03", "N-JAN-B", "2026-01-22", 30000, "posted"],
+    ["R04", "N-JAN-P", "2026-01-27", 10000, "posted"],
+    ["R05", "N-FEB-D", "2026-02-12", 40000, "posted"],
+    ["R06", "N-FEB-D", "2026-02-15", 40000, "posted"],
+    ["R07", "N-FEB-P", "2026-02-22", 60000, "posted"],
+    ["R08", "N-FEB-P", "2026-02-24", 60000, "posted"]
+  ],
+  "fulfillment_events": [
+    ["F01", "N-JAN-A", "packed"], ["F02", "N-JAN-A", "shipped"],
+    ["F03", "N-JAN-B", "shipped"], ["F04", "N-JAN-P", "shipped"],
+    ["F05", "N-FEB-D", "packed"], ["F06", "N-FEB-D", "shipped"],
+    ["F07", "N-FEB-P", "shipped"],
+    ["F08", "SOUTH_ORDER_CANARY", "shipped"], ["F09", "S-FEB-D", "shipped"]
+  ],
+  "customers_private": [["C01", "PRIVATE_EMAIL_CANARY@example.invalid"], ["C02", "fictional@example.invalid"]],
+  "period_coverage": [["2026-01", "North", 1], ["2026-02", "North", 1], ["2026-01", "South", 1], ["2026-02", "South", 1]]
+}

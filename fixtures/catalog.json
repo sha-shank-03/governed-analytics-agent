@@ -1,0 +1,13 @@
+{
+  "version": "catalog_v1",
+  "schema_version": "sales_v1",
+  "currency": "USD",
+  "measures": {
+    "gross_sales_v1": "Completed-order quantity times unit price; excludes tax and freight.",
+    "discounts_v1": "Line-total discounts on completed orders.",
+    "refunds_v1": "Posted refunds before the exclusive as-of cutoff, attributed to the original order month.",
+    "net_sales_v1": "Gross sales minus line-total discounts minus posted cohort refunds."
+  },
+  "groupings": ["none", "channel"],
+  "grain_warning": "Aggregate order_lines and refunds separately by order_id before joining; SUM(DISTINCT amount) loses equal-valued real rows."
+}
