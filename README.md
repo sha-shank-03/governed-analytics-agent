@@ -4,6 +4,59 @@ A small Python workflow for fictional sales questions: clarify gross versus net 
 
 **Current scope: final local MVP independently accepted.** All seven final commands passed on their first attempt on Windows: 51 tests, 72 development trials, 216 frozen held-out trials and two demos. An additional worker audit passed 4,491 assertions against raw facts and saved artifacts. M1/M2 were independently accepted; M3 source/rubrics were reviewed before scoring. Decisions are scripted or explicitly labeled authored faults. No live model call or model-quality score is claimed. EVIDENCE.md preserves all earlier failures and the actual M3 results. Main also reproduced all seven commands from a fresh 48-file source copy: 51 tests, 288 comparison trials, two demos and 5,157 additional raw-data/database conditions passed. Hosted CI is authored and unexecuted.
 
+## U1 local-double workflow accepted; live evidence pending
+
+An additive Gateway-native local-double path now supports free-form proposals,
+external full-contract confirmation, all four catalog measures and independently
+verified SQLite totals/channels. Main independently accepted U1 on 11 October
+2026: all 109 tests and seven documented demos passed with expected exits,
+196 direct fixture/SQLite/checkpoint checks passed, and four deliberately
+corrupted reports were rejected. The earlier worker test and launcher failures
+remain preserved. These are local-double results; live model quality and external
+integration remain pending. See the [U1 walkthrough](docs/u1-local-gateway.md).
+
+## U2-A local BigQuery contract accepted; external sandbox pending
+
+Main accepted U2-A, its deadline correction and formatting overlay on 12 October
+2026. Main passed 43 targeted pure, four admission/deadline native, five connector
+native and 20 U1 native regression methods. Independent review passed 138
+saved-domain/SQLite assertions including four corrupt-result controls, plus 73
+format/receipt checks and 76 unchanged non-README file hashes. The original
+callback deadline finding, README whitespace exit 2 and main oracle typo remain
+preserved. No BigQuery principal, IAM, billing state or genuine sandbox access has
+been verified. See [connector boundaries](docs/u2a-bigquery-snapshot.md).
+
+## U2-B exposed offline contract accepted; U2-C reporting ready for review
+
+Main accepted the exposed offline U2-B contract on 12 October 2026: 31 pure and
+35 native/affected regression methods, 42 paired tasks and three repeated demos
+passed; 902 independent assertions and six negative controls passed. All 139
+source pins remained unchanged. Per arm: **29 numeric completions and 13 correct
+safe non-answers**, six synthetic semantic corrections, 33 synthetic confirmation
+attempts and 29 accepted confirmations. No human approvals were collected.
+
+Both exposed splits (18 development, 24 capability) and both arms use the same
+policy; 42 ties establish execution consistency. Live-model reasoning uplift,
+actual BigQuery/IAM/billing sandbox, main-held unseen acceptance and publication
+remain pending. Tokens and estimated/actual cost remain null.
+
+The source-bound redacted snapshot and runnable case study are in
+[evidence/u2b/observed.md](evidence/u2b/observed.md) and the
+[reporting guide](docs/u2c-reporting.md). Reproduce the report without rerunning
+analytics:
+
+```powershell
+py -3.11 -m reporting.freeze
+py -3.11 -m reporting.replay --out work/review-report
+```
+
+U2-C adds separate durable attempt accounting and pure packaging. New native
+accounting checks are authored/unexecuted pending a fresh main lease; no cohort
+rerun is needed. Seven prior seals, original 48 tasks, current 42-task corpus,
+actors, gold, budgets, initial overlap findings and raw results are preserved.
+The versioned offline CI defaults to pure checks/replay; hosted execution remains
+unexecuted. See the [case study](docs/u2b-case-study.md).
+
 ## Run locally on Windows
 
 Use Python 3.11 and run from this checkout. No package installation, Docker or service account is required. Use a fresh output directory for each run; completed outputs are preserved.

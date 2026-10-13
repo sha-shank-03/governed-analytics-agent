@@ -1,0 +1,126 @@
+{
+  "version": "u2a-readme-format-overlay-v1",
+  "at": "2026-10-12T07:50:06.286293+00:00",
+  "evidence_kind": "README_line_endings_only",
+  "base_manifest": "FROZEN_U2A_CORRECTION1.json",
+  "base_manifest_sha256": "1ca4e85d5fef9a6f61b3897f6b51466a791b2a7d144a579f778df1740ad0fd0a",
+  "preserved_original_manifest": "FROZEN_U2A.json",
+  "preserved_original_manifest_sha256": "b499e9b5452a5bbcc93192114725721a0873daec262e51d9f62e597fb9eecaab",
+  "overrides": {
+    "README.md": {
+      "old_sha256": "6a0fcbef81d4b606a190406a720b4007bd4a2339c31837a324db32902cd60f55",
+      "new_sha256": "09c2e3346245471dde26320760e84c129cb1d5a723b67e321a67d097f0eaca95",
+      "operation": "Replace CRLF with LF; identical UTF-8 text lines; no other byte transformation.",
+      "crlf_sequences_replaced": 134,
+      "old_bytes": 12786,
+      "new_bytes": 12652
+    }
+  },
+  "unchanged_rule": "All other base-manifest file hashes remain unchanged; only README hash is overlaid.",
+  "existing_non_readme_files_checked": 76,
+  "existing_non_readme_files_byte_identical": true,
+  "source_inventory_scope": "git ls-files --cached --others --exclude-standard; all existing tracked/non-ignored untracked files",
+  "original_manifest_bytes_modified": false,
+  "main_functional_receipts": {
+    "review_id": "20261012T0739",
+    "archive": "coordination/upgrades/2026-10-11/acceptance/governed-analytics-agent/20261012T0739",
+    "raw_files_sha256": {
+      "01-stderr.log": "d0bb4c745bf630c15af1bc6de95359280343d00dded211e348df83905d83a714",
+      "01-stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "02-stderr.log": "8c0b6ed81a2810f5320796ddd26e0eda004a664c7625b66b7d4d91faabe94c2f",
+      "02-stdout.log": "d2206c4e25b403769c325860edf02419bda3d97b579836c0804d1189b547a14c",
+      "03-stderr.log": "2bbf94286f85988afe568644f31bcd7993eb6207c98d78b2395db7e2e0036306",
+      "03-stdout.log": "7b2995b09119d9e66782c010f2ffc8a3435cdaab910ddca650695034c36807e1",
+      "04-stderr.log": "1a8f62ca449ab81e049048f1064acc4368b3525eab5a63169cfce4ea9ccba2cf",
+      "04-stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "05-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "05-stdout.log": "804ff447c4905b81178073bee56aebbd9490f228e4ae23ef3b247d7c8f094c35",
+      "artifact-paths.json": "a3a99906c135cdf6b314b7783d7612e0d38ee7b3cc061239b9dfde1dc1acf7a2",
+      "execution-summary.json": "e43d4f9e9c123a0ae9f5b5679044f55d79674cfedc559efa375d4c3ad8c543f8"
+    },
+    "commands": [
+      {
+        "argv": [
+          "py",
+          "-3.11",
+          "-m",
+          "unittest",
+          "tests.unit.test_bigquery_loader_deadline",
+          "tests.unit.test_bigquery_snapshot",
+          "tests.unit.test_upgrade_budget",
+          "-v"
+        ],
+        "exit_code": 0
+      },
+      {
+        "argv": [
+          "py",
+          "-3.11",
+          "-m",
+          "unittest",
+          "tests.integration.test_bigquery_loader_deadline",
+          "-v"
+        ],
+        "exit_code": 0
+      },
+      {
+        "argv": [
+          "py",
+          "-3.11",
+          "-m",
+          "unittest",
+          "tests.integration.test_bigquery_native",
+          "-v"
+        ],
+        "exit_code": 0
+      },
+      {
+        "argv": [
+          "py",
+          "-3.11",
+          "-m",
+          "unittest",
+          "tests.integration.test_upgrade_transport",
+          "tests.integration.test_upgrade_workflow",
+          "-v"
+        ],
+        "exit_code": 0
+      },
+      {
+        "argv": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 2
+      }
+    ],
+    "passed_methods": {
+      "targeted_pure": 43,
+      "admission_deadline_native": 4,
+      "bigquery_local_http_native": 5,
+      "u1_transport_workflow_native": 20
+    },
+    "main_source_unchanged_during_tests": true,
+    "first_plain_whitespace_check_exit": 2,
+    "whitespace_failure": "README CR line endings treated as trailing whitespace on changed lines.",
+    "resource_limitations": "Full process-tree lifetime memory peaks unmeasured; owned helper PID/wait receipts retained.",
+    "domain_audit": "Main independent saved-domain audit remains in progress; no U2-A acceptance inferred."
+  },
+  "format_verification": {
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "native_exit": 0,
+    "configuration_override": false
+  },
+  "worker_functional_native_reruns": 0,
+  "external_calls": 0,
+  "credentials_account_live_model_access": false,
+  "heavy_lease_consumed": false,
+  "new_dependencies_or_datasets": false,
+  "publication": false,
+  "main_acceptance": false
+}

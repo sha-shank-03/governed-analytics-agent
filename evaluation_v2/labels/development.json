@@ -1,0 +1,642 @@
+{
+  "d01": {
+    "kind": "numeric",
+    "semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2030-01",
+        "2030-02"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2030-01",
+        "2030-02"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "operator_fault": null,
+    "safe_reason": null
+  },
+  "d02": {
+    "kind": "numeric",
+    "semantic": {
+      "metric": "gross_sales_v1",
+      "periods": [
+        "2030-04",
+        "2030-05"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": "gross_sales_v1",
+      "periods": [
+        "2030-04",
+        "2030-05"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "operator_fault": null,
+    "safe_reason": null
+  },
+  "d03": {
+    "kind": "numeric",
+    "semantic": {
+      "metric": "discounts_v1",
+      "periods": [
+        "2030-07",
+        "2030-08"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": "discounts_v1",
+      "periods": [
+        "2030-07",
+        "2030-08"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "operator_fault": null,
+    "safe_reason": null
+  },
+  "d04": {
+    "kind": "numeric",
+    "semantic": {
+      "metric": "refunds_v1",
+      "periods": [
+        "2030-10",
+        "2030-11"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": "refunds_v1",
+      "periods": [
+        "2030-10",
+        "2030-11"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "operator_fault": null,
+    "safe_reason": null
+  },
+  "d05": {
+    "kind": "numeric",
+    "semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2031-01",
+        "2031-02"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": null,
+      "periods": [
+        "2031-01",
+        "2031-02"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": [
+        "metric"
+      ]
+    },
+    "operator_fault": null,
+    "safe_reason": null
+  },
+  "d06": {
+    "kind": "numeric",
+    "semantic": {
+      "metric": "gross_sales_v1",
+      "periods": [
+        "2031-04",
+        "2031-05"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": "gross_sales_v1",
+      "periods": [],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": [
+        "periods"
+      ]
+    },
+    "operator_fault": null,
+    "safe_reason": null
+  },
+  "d07": {
+    "kind": "numeric",
+    "semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2031-07",
+        "2031-08"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2031-07",
+        "2031-08"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "operator_fault": null,
+    "safe_reason": null
+  },
+  "d08": {
+    "kind": "numeric",
+    "semantic": {
+      "metric": "gross_sales_v1",
+      "periods": [
+        "2031-10",
+        "2031-11"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": "gross_sales_v1",
+      "periods": [
+        "2031-10",
+        "2031-11"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "operator_fault": null,
+    "safe_reason": null
+  },
+  "d09": {
+    "kind": "numeric",
+    "semantic": {
+      "metric": "discounts_v1",
+      "periods": [
+        "2032-01",
+        "2032-02"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": "discounts_v1",
+      "periods": [
+        "2032-01",
+        "2032-02"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "operator_fault": null,
+    "safe_reason": null
+  },
+  "d10": {
+    "kind": "numeric",
+    "semantic": {
+      "metric": "refunds_v1",
+      "periods": [
+        "2032-04",
+        "2032-05"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": "refunds_v1",
+      "periods": [
+        "2032-04",
+        "2032-05"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "operator_fault": null,
+    "safe_reason": null
+  },
+  "d11": {
+    "kind": "numeric",
+    "semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2032-07",
+        "2032-08"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2032-07",
+        "2032-08"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "operator_fault": null,
+    "safe_reason": null
+  },
+  "d12": {
+    "kind": "safe",
+    "semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2032-10",
+        "2032-11"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2032-10",
+        "2032-11"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "operator_fault": null,
+    "safe_reason": "INCOMPLETE_PERIOD_COVERAGE"
+  },
+  "d13": {
+    "kind": "safe",
+    "semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2033-01",
+        "2033-02"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": null,
+    "first_semantic": null,
+    "operator_fault": null,
+    "safe_reason": "SCOPE_NOT_GRANTED"
+  },
+  "d14": {
+    "kind": "safe",
+    "semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2033-04",
+        "2033-05"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": null,
+    "first_semantic": null,
+    "operator_fault": null,
+    "safe_reason": "PRIVATE_DATA_REQUEST"
+  },
+  "d15": {
+    "kind": "numeric",
+    "semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2033-07",
+        "2033-08"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2033-07",
+        "2033-08"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "operator_fault": null,
+    "safe_reason": null
+  },
+  "d16": {
+    "kind": "numeric",
+    "semantic": {
+      "metric": "gross_sales_v1",
+      "periods": [
+        "2033-10",
+        "2033-11"
+      ],
+      "regions": [
+        "South"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": "gross_sales_v1",
+      "periods": [
+        "2033-10",
+        "2033-11"
+      ],
+      "regions": [
+        "South"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "operator_fault": null,
+    "safe_reason": null
+  },
+  "d17": {
+    "kind": "safe",
+    "semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2034-01",
+        "2034-02"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": "propose_intent",
+    "first_semantic": {
+      "metric": "net_sales_v1",
+      "periods": [
+        "2034-01",
+        "2034-02"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "operator_fault": "source_after_proposal",
+    "safe_reason": "SOURCE_CONTEXT_CHANGED"
+  },
+  "d18": {
+    "kind": "safe",
+    "semantic": {
+      "metric": "gross_sales_v1",
+      "periods": [
+        "2034-04",
+        "2034-05"
+      ],
+      "regions": [
+        "North"
+      ],
+      "groupings": [
+        "none",
+        "channel"
+      ],
+      "currency": "USD",
+      "ambiguities": []
+    },
+    "first_tool": null,
+    "first_semantic": null,
+    "operator_fault": null,
+    "safe_reason": "SCOPE_NOT_GRANTED"
+  }
+}

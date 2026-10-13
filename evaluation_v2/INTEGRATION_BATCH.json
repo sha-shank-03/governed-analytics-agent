@@ -1,0 +1,162 @@
+{
+  "version": "u2b-native-batch-v1",
+  "status": "AUTHORED_UNEXECUTED_FRESH_MAIN_LEASE_REQUIRED",
+  "execution_order_fixed": true,
+  "maximum_total_seconds": 900,
+  "maximum_ram_mib": 512,
+  "maximum_generated_disk_mib": 200,
+  "maximum_python_processes_at_once": 3,
+  "maximum_sql_children_at_once": 1,
+  "maximum_loopback_servers_at_once": 1,
+  "download_bytes": 0,
+  "live_calls": 0,
+  "external_calls": 0,
+  "commands": [
+    {
+      "name": "native-and-affected-regressions",
+      "arguments": [
+        "-3.11",
+        "-m",
+        "unittest",
+        "tests.integration.test_u2b_native",
+        "tests.integration.test_upgrade_workflow",
+        "tests.integration.test_upgrade_transport",
+        "tests.integration.test_bigquery_native",
+        "-v"
+      ],
+      "test_methods": 35,
+      "new_u2b_methods": 10,
+      "u1_regression_methods": 20,
+      "bigquery_regression_methods": 5,
+      "maximum_seconds": 180,
+      "expected_exit": 0
+    },
+    {
+      "name": "development-comparison",
+      "arguments": [
+        "-3.11",
+        "-m",
+        "evaluation_v2.run",
+        "--split",
+        "development",
+        "--actor",
+        "compare",
+        "--out",
+        "work/u2b-development",
+        "--lease-ack",
+        "main-authorized-local-u2b"
+      ],
+      "unique_tasks": 18,
+      "artifact_runs": 36,
+      "numeric_unique": 13,
+      "safe_unique": 5,
+      "maximum_seconds": 240,
+      "expected_exit": 0
+    },
+    {
+      "name": "capability-comparison",
+      "arguments": [
+        "-3.11",
+        "-m",
+        "evaluation_v2.run",
+        "--split",
+        "capability",
+        "--actor",
+        "compare",
+        "--out",
+        "work/u2b-capability",
+        "--lease-ack",
+        "main-authorized-local-u2b"
+      ],
+      "unique_tasks": 24,
+      "artifact_runs": 48,
+      "numeric_unique": 16,
+      "safe_unique": 8,
+      "maximum_seconds": 300,
+      "expected_exit": 0
+    },
+    {
+      "name": "demo-grain-safe",
+      "arguments": [
+        "-3.11",
+        "-m",
+        "evaluation_v2.run",
+        "--split",
+        "development",
+        "--case",
+        "d07",
+        "--actor",
+        "deterministic-v2",
+        "--out",
+        "work/u2b-demo-grain",
+        "--lease-ack",
+        "main-authorized-local-u2b"
+      ],
+      "maximum_seconds": 45,
+      "expected_exit": 0,
+      "expected_domain_outcome": "numeric completion verified against raw facts"
+    },
+    {
+      "name": "demo-scope-denial",
+      "arguments": [
+        "-3.11",
+        "-m",
+        "evaluation_v2.run",
+        "--split",
+        "development",
+        "--case",
+        "d13",
+        "--actor",
+        "deterministic-v2",
+        "--out",
+        "work/u2b-demo-scope",
+        "--lease-ack",
+        "main-authorized-local-u2b"
+      ],
+      "maximum_seconds": 30,
+      "expected_exit": 0,
+      "expected_domain_outcome": "correct access denial, empty projection, no SQL"
+    },
+    {
+      "name": "demo-provenance-stop",
+      "arguments": [
+        "-3.11",
+        "-m",
+        "evaluation_v2.run",
+        "--split",
+        "development",
+        "--case",
+        "d17",
+        "--actor",
+        "deterministic-v2",
+        "--out",
+        "work/u2b-demo-provenance",
+        "--lease-ack",
+        "main-authorized-local-u2b"
+      ],
+      "maximum_seconds": 30,
+      "expected_exit": 0,
+      "expected_domain_outcome": "correct typed failed non-answer after source tamper, no SQL"
+    }
+  ],
+  "unique_new_tasks": 42,
+  "comparison_artifact_runs": 84,
+  "demo_repeat_runs": 3,
+  "new_independent_tasks_added_by_demos_or_views": 0,
+  "main_acceptance_status": "pending; never inferred from expected exits",
+  "stop_conditions": [
+    "Any unexpected exit/domain outcome",
+    "Total time/RAM/disk cap",
+    "Owned child unreaped",
+    "Any attempted external request"
+  ],
+  "receipt_requirements": [
+    "Exact command/start/end/exit/stdout/stderr",
+    "Root/helper PIDs and reaping",
+    "Observed peaks with coverage limitations",
+    "No retries or source edits within frozen batch",
+    "Independent main raw facts/SQLite/report checks and corruption controls"
+  ],
+  "historical_regression_48": "Preserved separately; no additional repetition assigned in this local batch",
+  "real_model_or_external_sandbox": "Not authorized by this batch"
+}

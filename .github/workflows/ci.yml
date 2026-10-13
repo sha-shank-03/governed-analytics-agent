@@ -1,9 +1,14 @@
-name: Offline workflow checks
+name: Offline reporting package
 
 on:
   push:
   pull_request:
   workflow_dispatch:
+    inputs:
+      native_accounting:
+        description: 'Run the two bounded accounting wrapper checks'
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -13,11 +18,10 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  offline:
-    # Standard hosted runners are free for public repositories; skip private repositories.
+  pure-package:
     if: github.event.repository.private == false
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -26,13 +30,28 @@ jobs:
         with:
           python-version: '3.11.9'
           check-latest: false
-      - name: Frozen source and runtime
+      - name: Current package and preserved historical source
         run: |
-          python -m evaluation.freeze --verify
-          python -m governed_analytics doctor
-      - name: Units and local integration
-        run: python -m unittest discover -s tests -v
-      - name: Development comparison
-        run: python -m evaluation.run --split development --mode compare --repeat 3 --out work/ci-development
-      - name: Authored held-out repeatability
-        run: python -m evaluation.run --split heldout --mode compare --repeat 3 --out work/ci-heldout
+          python -m reporting.freeze
+          python -m reporting.freeze --historical
+          python -m evaluation_v2.author --check
+          python -m evaluation_v2.legacy
+      - name: Pure reporting and exposed-corpus regressions
+        run: python -m unittest tests.unit.test_u2c tests.unit.test_u2b -v
+      - name: Replay sealed redacted evidence (no analytics execution)
+        run: python -m reporting.replay --out work/ci-report
+  optional-native-accounting:
+    if: github.event.repository.private == false && github.event_name == 'workflow_dispatch' && inputs.native_accounting
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11.9'
+          check-latest: false
+      - run: python -m reporting.freeze
+      - name: Two existing-case journal checks; no cohort rerun
+        run: python -m unittest tests.integration.test_u2c_accounting -v

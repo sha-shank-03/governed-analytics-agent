@@ -1,0 +1,36 @@
+{
+  "version": "u2c-packaging-batch-v1",
+  "status": "source/pure ready; independent main review pending",
+  "cohort_rerun_required": false,
+  "reason": "Actors, gold, current42/original48 corpora, SQL/approval boundaries and budgets are unchanged. Only reporting/journal wrapper and packaging changed.",
+  "packaging_commands": [
+    {"argv": ["py", "-3.11", "-m", "reporting.freeze"], "expected_exit": 0},
+    {"argv": ["py", "-3.11", "-m", "reporting.freeze", "--historical"], "expected_exit": 0},
+    {"argv": ["py", "-3.11", "-m", "unittest", "tests.unit.test_u2c", "tests.unit.test_u2b", "-v"], "expected_exit": 0, "pure_methods": 57},
+    {"argv": ["py", "-3.11", "-m", "reporting.replay", "--out", "work/main-u2c-package"], "expected_exit": 0},
+    {"argv": ["git", "diff", "--check"], "expected_exit": 0}
+  ],
+  "packaging_max_seconds": 60,
+  "packaging_max_ram_mib": 256,
+  "packaging_max_output_mib": 5,
+  "packaging_native_processes_or_sqlite_queries": 0,
+  "future_native_proposal": {
+    "status": "AUTHORED_UNEXECUTED_FRESH_MAIN_LEASE_REQUIRED",
+    "argv": ["py", "-3.11", "-m", "unittest", "tests.integration.test_u2c_accounting", "-v"],
+    "expected_exit": 0,
+    "test_methods": 2,
+    "unique_existing_tasks_repeated": ["d07", "d17"],
+    "new_independent_tasks": 0,
+    "maximum_seconds": 90,
+    "maximum_ram_mib": 256,
+    "maximum_generated_disk_mib": 5,
+    "maximum_python_processes_at_once": 2,
+    "maximum_sql_children_at_once": 1,
+    "maximum_socket_servers": 0,
+    "downloads": 0,
+    "live_model_or_external_calls": 0,
+    "stop_conditions": ["Unexpected exit or domain/accounting outcome", "Resource cap", "Owned child unreaped"],
+    "receipt_requirements": ["Exact command/start/end/exit/stdout/stderr", "Observed process/memory coverage and cleanup limits", "Ledger STARTED before invocation, terminal report/score hashes", "No source edits or retries within frozen batch"]
+  },
+  "pending": ["Main source/pure review", "Optional fresh native accounting lease", "Main unseen/live/external acceptance", "Publication"]
+}
